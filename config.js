@@ -1,6 +1,6 @@
 // Configuration loader
 function loadConfig(config) {
-    // This line may cause a null pointer issue if config is null
+    if (! config || !config.settings) {
     return config.settings.theme;
 }
 
